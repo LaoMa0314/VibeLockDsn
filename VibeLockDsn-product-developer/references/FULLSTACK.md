@@ -1,104 +1,104 @@
-# 全栈开发指南
+# Full-Stack Development Guide
 
-## 目标
-使用指定技术栈（前端：React，后端：Python + FastAPI，数据库：MySQL）完成全栈开发流程。
+## Objective
+Complete full-stack development process using specified technology stack (Frontend: React, Backend: Python + FastAPI, Database: MySQL).
 
-## 一、数据库设计与实现（MySQL）
+## I. Database Design and Implementation (MySQL)
 
-### 1. 创建数据库表结构
-- 根据PRD中的数据架构设计MySQL表结构
-- 定义表字段、数据类型（MySQL支持的类型）和约束
-- 设置表之间的关系和外键约束
+### 1. Create Database Table Structure
+- Design MySQL table structure based on data architecture in PRD
+- Define table fields, data types (MySQL supported types) and constraints
+- Set relationships and foreign key constraints between tables
 
-### 2. 编写数据库迁移脚本
-- 创建初始表结构迁移脚本
-- 编写索引和约束创建脚本
-- 配置迁移工具（推荐使用Alembic，FastAPI项目常用）
+### 2. Write Database Migration Scripts
+- Create initial table structure migration scripts
+- Write index and constraint creation scripts
+- Configure migration tool (recommend using Alembic, commonly used in FastAPI projects)
 
-### 3. 设置数据库索引和约束
-- 为经常查询的字段创建索引
-- 设置唯一性约束和外键约束
-- 配置数据验证规则
+### 3. Set Database Indexes and Constraints
+- Create indexes for frequently queried fields
+- Set uniqueness constraints and foreign key constraints
+- Configure data validation rules
 
-### 4. 创建种子数据和测试数据
-- 准备基础数据（如系统配置、初始用户等）
-- 创建测试数据生成脚本
-- 确保数据覆盖各种业务场景
+### 4. Create Seed Data and Test Data
+- Prepare basic data (such as system configurations, initial users, etc.)
+- Create test data generation scripts
+- Ensure data covers various business scenarios
 
-### 5. 生成演示数据集
-- 创建真实模拟的用户数据
-- 生成业务数据样本
-- 确保数据覆盖边界情况和异常场景
+### 5. Generate Demonstration Dataset
+- Create realistic simulated user data
+- Generate business data samples
+- Ensure data covers boundary cases and exception scenarios
 
-### 6. 创建数据导入工具
-- 编写数据导入脚本
-- 配置批量导入功能
-- 设置数据验证和错误处理
+### 6. Create Data Import Tools
+- Write data import scripts
+- Configure batch import functionality
+- Set up data validation and error handling
 
-## 二、后端开发（Python + FastAPI）
+## II. Backend Development (Python + FastAPI)
 
-### 1. 创建API接口
-- 使用FastAPI框架设计RESTful API接口规范
-- 实现路由和端点处理函数
-- 使用Pydantic进行请求参数验证
+### 1. Create API Interfaces
+- Design RESTful API interface specifications using FastAPI framework
+- Implement routes and endpoint handlers
+- Use Pydantic for request parameter validation
 
-### 2. 实现业务逻辑层
-- 创建服务层处理业务逻辑
-- 使用SQLAlchemy实现数据访问层
-- 配置事务管理和数据库会话
+### 2. Implement Business Logic Layer
+- Create service layer to handle business logic
+- Use SQLAlchemy to implement data access layer
+- Configure transaction management and database sessions
 
-### 3. 设置认证和授权机制
-- 使用JWT（JSON Web Tokens）实现用户认证
-- 设置基于角色的访问控制（RBAC）
-- 配置FastAPI依赖注入进行权限验证
+### 3. Set Up Authentication and Authorization Mechanism
+- Use JWT (JSON Web Tokens) for user authentication
+- Set up Role-Based Access Control (RBAC)
+- Configure FastAPI dependency injection for permission validation
 
-### 4. 实现数据验证和错误处理
-- 使用Pydantic模型进行请求数据验证
-- 实现统一的异常处理机制
-- 设置标准化的错误响应格式
+### 4. Implement Data Validation and Error Handling
+- Use Pydantic models for request data validation
+- Implement unified exception handling mechanism
+- Set up standardized error response format
 
-### 5. 配置日志和监控
-- 使用Python日志模块设置日志记录系统
-- 配置性能监控和API请求跟踪
-- 实现健康检查端点和系统状态监控
+### 5. Configure Logging and Monitoring
+- Use Python logging module to set up logging system
+- Configure performance monitoring and API request tracking
+- Implement health check endpoints and system status monitoring
 
-## 三、前端开发（React）
+## III. Frontend Development (React)
 
-### 1. 创建基础组件
-- 使用React函数组件创建UI组件
-- 应用设计系统变量和样式规范
-- 使用React Hooks管理组件状态
+### 1. Create Basic Components
+- Create UI components using React functional components
+- Apply design system variables and style specifications
+- Use React Hooks to manage component state
 
-### 2. 实现组件交互逻辑
-- 添加事件处理和用户交互
-- 使用React Hook Form实现表单验证和提交
-- 设置组件动画和过渡效果（使用CSS或动画库）
+### 2. Implement Component Interaction Logic
+- Add event handling and user interaction
+- Use React Hook Form for form validation and submission
+- Set up component animations and transition effects (using CSS or animation libraries)
 
-### 3. 开发页面组件
-- 组装基础组件创建页面
-- 使用React Router实现页面导航和路由
-- 配置页面布局和响应式设计
+### 3. Develop Page Components
+- Assemble basic components to create pages
+- Use React Router for page navigation and routing
+- Configure page layout and responsive design
 
-### 4. 集成API调用
-- 创建API服务层（使用axios或fetch）
-- 实现数据获取和提交
-- 设置加载状态和错误处理
+### 4. Integrate API Calls
+- Create API service layer (using axios or fetch)
+- Implement data fetching and submission
+- Set up loading states and error handling
 
-### 5. 实现状态管理
-- 配置状态管理库（推荐使用Redux Toolkit或React Context）
-- 创建状态存储和操作
-- 实现状态持久化（可选，使用localStorage或sessionStorage）
+### 5. Implement State Management
+- Configure state management library (recommend using Redux Toolkit or React Context)
+- Create state store and operations
+- Implement state persistence (optional, using localStorage or sessionStorage)
 
-## 全栈开发流程集成
+## Full-Stack Development Process Integration
 
-### 开发顺序建议
-1. **数据库设计与实现**：先完成数据模型设计，为后续开发奠定基础
-2. **后端开发**：基于数据库模型实现API接口和业务逻辑
-3. **前端开发**：集成后端API，实现用户界面和交互
+### Development Sequence Recommendations
+1. **Database Design and Implementation**: Complete data model design first to lay foundation for subsequent development
+2. **Backend Development**: Implement API interfaces and business logic based on database models
+3. **Frontend Development**: Integrate backend APIs, implement user interface and interaction
 
-### 开发注意事项
-- 保持前后端API接口的一致性
-- 确保数据模型在前后端的统一理解
-- 实现完整的错误处理和异常情况处理
-- 保持代码质量和可维护性
-- 进行充分的测试验证
+### Development Notes
+- Maintain consistency between frontend and backend API interfaces
+- Ensure unified understanding of data models in both frontend and backend
+- Implement comprehensive error handling and exception case handling
+- Maintain code quality and maintainability
+- Conduct thorough testing and validation

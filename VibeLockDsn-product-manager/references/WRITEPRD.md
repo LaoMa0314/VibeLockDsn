@@ -1,94 +1,94 @@
 name:prd-writer
-description:编写产品需求文档（PRD）。
+description:Write Product Requirements Document (PRD).
 
-# PRD编写指南
+# PRD Writing Guide
 
-## 前置条件：
-- 需求分析文档
-- 功能架构设计结果
-- 流程设计结果
-- 数据架构设计结果
-- 产品原型设计结果
-- 交互流程设计结果（如有）
+## Prerequisites:
+- Requirement analysis document
+- Functional architecture design results
+- Process design results
+- Data architecture design results
+- Product prototype design results
+- Interaction flow design results (if any)
 
-## 输出工具：
-所有输出必须使用Obsidian展示。
+## Output Tools:
+All outputs must be displayed using Obsidian.
 
-## 编写原则：
-- 继承前置任务所有的产物
-- 结构清晰，内容完整
-- 语言简洁，易于理解
-- 包含足够的细节供开发和测试使用
-- 优化上下文窗口，支持AI编码（vibe coding）
+## Writing Principles:
+- Inherit all deliverables from previous tasks
+- Clear structure, complete content
+- Concise language, easy to understand
+- Include sufficient details for development and testing
+- Optimize context window to support AI coding (vibe coding)
 
-## PRD结构（优化版，支持AI编码）：
+## PRD Structure (Optimized Version, Supporting AI Coding):
 
-### 1. 核心摘要（AI优先读取，约1000字）
-- **产品目标与技术栈**：明确产品定位和技术选型
-- **核心功能模块清单**：表格形式，包含模块名称、优先级
-- **关键页面导航图**：展示页面间关系
+### 1. Core Summary (AI Priority Reading, Approximately 1000 words)
+- **Product Objectives and Technology Stack**: Clarify product positioning and technology selection
+- **Core Functional Module List**: Table format, including module names and priorities
+- **Key Page Navigation Diagram**: Show relationships between pages
 
-### 2. 页面详细规范
-#### 页面1: [页面名称]
-- **组件清单**：名称、功能描述、状态（表格形式）
-- **原型图**：Pencil截图（带画布访问路径），调用pencil-export-2x skill插入
-- **交互说明**：用户操作→系统响应的映射关系
-- **API调用点**：端点、参数、返回结构定义
+### 2. Page Detailed Specifications
+#### Page 1: [Page Name]
+- **Component List**: Name, function description, status (table format)
+- **Prototype Diagram**: Pencil screenshot (with canvas access path), call pencil-export-2x skill to insert
+- **Interaction Instructions**: Mapping relationships between user operations → system responses
+- **API Call Points**: Endpoint, parameters, return structure definitions
 
-### 3. 数据架构设计
-- **数据模型定义**：核心实体、属性字段、关系映射
-- **数据库设计**：表结构、索引、约束条件
-- **数据流程图**：数据流向和处理逻辑
-- **API数据结构**：请求/响应格式定义
+### 3. Data Architecture Design
+- **Data Model Definitions**: Core entities, attribute fields, relationship mappings
+- **Database Design**: Table structures, indexes, constraint conditions
+- **Data Flow Diagrams**: Data flow directions and processing logic
+- **API Data Structures**: Request/response format definitions
 
-### 4. 技术实现指南
-- **设计系统变量**：CSS变量定义（颜色、尺寸、字体等）
-- **组件库使用规范**：组件命名、属性定义
-- **数据流与状态管理**：基于交互流程的状态管理模式
-- **响应式设计断点**：各终端适配策略
+### 4. Technical Implementation Guide
+- **Design System Variables**: CSS variable definitions (colors, sizes, typography, etc.)
+- **Component Library Usage Specifications**: Component naming, attribute definitions
+- **Data Flow and State Management**: State management patterns based on interaction flows
+- **Responsive Design Breakpoints**: Adaptation strategies for various terminals
 
-### 5. 开发验证清单
-- **功能验收标准**：每个功能的具体验证方法
-- **性能要求**：加载时间、响应速度等指标
-- **兼容性要求**：浏览器、设备支持范围
+### 5. Development Verification Checklist
+- **Functional Acceptance Criteria**: Specific verification methods for each function
+- **Performance Requirements**: Loading time, response speed, and other metrics
+- **Compatibility Requirements**: Browser and device support scope
 
-## 输出格式：
-### PRD文档：
-- 使用Obsidian Markdown格式
-- 包含内部链接连接到相关文档
-- 使用标题层级组织内容
-- 表格展示结构化数据
-- Canvas展示可视化内容
+## Output Format:
+### PRD Document:
+- Use Obsidian Markdown format
+- Include internal links to connect related documents
+- Organize content using heading hierarchy
+- Display structured data in tables
+- Show visual content with Canvas
 
-## 上下文优化策略：
+## Context Optimization Strategy:
 
-### 分层交付策略：
-1. **核心层**：基础信息（必选，约1000字）
-2. **开发层**：详细规范（按需加载，约3000字）
-3. **资源层**：设计资产（独立引用）
+### Layered Delivery Strategy:
+1. **Core Layer**: Basic information (mandatory, approximately 1000 words)
+2. **Development Layer**: Detailed specifications (on-demand loading, approximately 3000 words)
+3. **Resource Layer**: Design assets (independent references)
 
-### 智能引用机制：
-- 使用内部链接关联相关文档
-- 将大型设计图转为引用链接而非内联
-- 提供模块化的内容结构，支持AI按需读取
+### Intelligent Reference Mechanism:
+- Use internal links to associate related documents
+- Convert large design diagrams to reference links instead of inline
+- Provide modular content structure to support AI on-demand reading
 
-## Pencil设计图转化策略：
+## Pencil Design Diagram Conversion Strategy:
 
-### 直接转化路径：
-1. **导出格式优化**：使用Pencil的HTML/CSS导出功能生成基础代码框架
-2. **组件化提取**：将原型拆分为可复用组件，建立组件映射表
-3. **设计令牌提取**：从Pencil中提取设计系统变量（颜色、尺寸、字体等）
+### Direct Conversion Path:
+1. **Export Format Optimization**: Use Pencil's HTML/CSS export function to generate basic code framework
+2. **Component Extraction**: Split prototypes into reusable components and establish component mapping tables
+3. **Design Token Extraction**: Extract design system variables from Pencil (colors, sizes, typography, etc.)
 
-### 代码生成增强：
-- 添加组件命名规范（与主流框架如React/Vue组件命名一致）
-- 定义状态管理模式（基于交互流程）
-- 提供API集成点说明
+### Code Generation Enhancement:
+- Add component naming conventions (consistent with mainstream frameworks like React/Vue component naming)
+- Define state management patterns (based on interaction flows)
+- Provide API integration point descriptions
 
-## Obsidian工具参考：
-| 工具名称            | 核心作用                                                         |
-|-------------------|----------------------------------------------------------------|
-| defuddle          | 清洗网页/视频内容，提取正文转为Markdown                             |
-| json-canvas       | 生成/编辑Canvas画布，制作思维导图、知识图谱                           |
-| obsidian-bases    | 操作Bases数据库视图，将笔记转为可筛选表格/卡片                         |
-| obsidian-cli      | 命令行接口，实现知识库自动化创建、搜索、整理                           |
-| obsidian-markdown | 生成符合Obsidian语法的Markdown笔记，支持内部链接、提示块等原生特性        |
+## Obsidian Tool Reference:
+| Tool Name | Core Function |
+|-----------|---------------|
+| defuddle | Clean web page/video content, extract main text and convert to Markdown |
+| json-canvas | Generate/edit Canvas canvas, create mind maps, knowledge graphs |
+| obsidian-bases | Operate Bases database views, convert notes into filterable tables/cards |
+| obsidian-cli | Command line interface for automated knowledge base creation, search, organization |
+| obsidian-markdown | Generate Markdown notes that comply with Obsidian syntax, supporting internal links, callouts, etc. |

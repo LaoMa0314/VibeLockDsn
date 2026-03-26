@@ -1,41 +1,41 @@
-# 环境启动与验证指南
+# Environment Startup and Verification Guide
 
-## 目标
-自动启动开发环境，验证服务状态，处理启动失败情况。
+## Objective
+Automatically start development environment, verify service status, handle startup failure cases.
 
-## 步骤
+## Steps
 
-### 1. 创建环境启动脚本
-- 编写启动前端服务器脚本
-- 创建启动后端服务器脚本
-- 设置数据库启动和连接脚本
+### 1. Create Environment Startup Scripts
+- Write frontend server startup script
+- Create backend server startup script
+- Set up database startup and connection script
 
-### 2. 配置环境变量和依赖服务
-- 设置必要的环境变量
-- 配置数据库连接参数
-- 设置服务端口和主机配置
+### 2. Configure Environment Variables and Dependent Services
+- Set necessary environment variables
+- Configure database connection parameters
+- Set up service port and host configuration
 
-### 3. 执行环境启动
-- 启动数据库服务
-- 启动后端服务器
-- 启动前端开发服务器
+### 3. Execute Environment Startup
+- Start database service
+- Start backend server
+- Start frontend development server
 
-### 4. 验证服务状态
-- 检查各服务启动状态
-- 执行健康检查
-- 验证服务间通信
+### 4. Verify Service Status
+- Check startup status of each service
+- Perform health checks
+- Verify service-to-service communication
 
-### 5. 进行基础功能测试
-- 测试核心API接口
-- 验证页面加载和交互
-- 测试数据操作功能
+### 5. Perform Basic Function Testing
+- Test core API interfaces
+- Verify page loading and interaction
+- Test data operation functions
 
-### 6. 故障自动诊断和修复
-- 监控服务启动日志
-- 识别常见启动错误
-- 自动执行修复操作
+### 6. Automatic Fault Diagnosis and Repair
+- Monitor service startup logs
+- Identify common startup errors
+- Automatically execute repair operations
 
-### 7. 重新启动环境验证修复效果
-- 重启服务验证修复
-- 再次执行功能测试
-- 确认所有服务正常运行
+### 7. Restart Environment to Verify Repair Effect
+- Restart services to verify repair
+- Execute functional tests again
+- Confirm all services are running normally

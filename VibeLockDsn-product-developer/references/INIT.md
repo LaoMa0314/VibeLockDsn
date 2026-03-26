@@ -1,40 +1,40 @@
-# 项目初始化指南
+# Project Initialization Guide
 
-## 目标
-创建完整的项目目录结构，配置开发环境和版本控制系统。
+## Objective
+Create complete project directory structure, configure development environment and version control system.
 
-## 步骤
+## Steps
 
-### 1. 创建项目目录结构
+### 1. Create Project Directory Structure
 ```
 project-root/
-├── dev/                     # 开发相关文件目录
-│   ├── frontend/           # 前端代码
-│   │   ├── src/           # 源代码
-│   │   ├── public/        # 静态资源
-│   │   └── package.json   # 前端依赖配置
-│   ├── backend/            # 后端代码
-│   │   ├── src/           # 源代码
-│   │   ├── tests/         # 测试代码
-│   │   └── package.json   # 后端依赖配置
-│   └── database/          # 数据库相关文件
-│       ├── migrations/    # 数据库迁移脚本
-│       ├── seeds/         # 种子数据
-│       └── scripts/       # 数据生成脚本
-└── .git/                  # Git版本控制
+├── dev/                     # Development-related files directory
+│   ├── frontend/           # Frontend code
+│   │   ├── src/           # Source code
+│   │   ├── public/        # Static resources
+│   │   └── package.json   # Frontend dependency configuration
+│   ├── backend/            # Backend code
+│   │   ├── src/           # Source code
+│   │   ├── tests/         # Test code
+│   │   └── package.json   # Backend dependency configuration
+│   └── database/          # Database-related files
+│       ├── migrations/    # Database migration scripts
+│       ├── seeds/         # Seed data
+│       └── scripts/       # Data generation scripts
+└── .git/                  # Git version control
 ```
 
-### 2. 安装依赖包
-- 根据选定的技术栈安装前端依赖
-- 安装后端框架和相关库
-- 安装数据库驱动和工具
+### 2. Install Dependencies
+- Install frontend dependencies based on selected technology stack
+- Install backend framework and related libraries
+- Install database drivers and tools
 
-### 3. 配置开发环境
-- 设置环境变量配置文件
-- 配置开发服务器
-- 设置代码编辑器配置
+### 3. Configure Development Environment
+- Set up environment variable configuration files
+- Configure development server
+- Set up code editor configuration
 
-### 4. 设置版本控制系统
-- 初始化Git仓库
-- 创建.gitignore文件
-- 配置Git hooks（可选）
+### 4. Set Up Version Control System
+- Initialize Git repository
+- Create .gitignore file
+- Configure Git hooks (optional)
