@@ -1,3 +1,4 @@
+# 中文介绍
 通过这个skill，可以让你的vibe design过程变得严谨高效，帮助你实现企业级产品经理的agent设计及开发、测试及落地。
 
 ## 如何使用这个skill：
@@ -17,6 +18,7 @@
 ## 写在结尾
 - 这个想法和场景还在不断完善中，真诚期望您的试用与反馈，我们一起来打造更好用的方法！
 
+# English ver.
 With this skill, you can make your Vibe Design process rigorous and efficient, helping you realize agent-driven design, development, testing, and deployment for enterprise-grade products.
 ## How to Use This Skill:
 - If you are a Chinese user, please use the two skills: VibeLockDsn-product-manager-zh and VibeLockDsn-product-developer-zh. Otherwise, if you are an English user, please use VibeLockDsn-product-manager and VibeLockDsn-product-developer.
